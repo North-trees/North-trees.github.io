@@ -331,7 +331,36 @@ function displayText() {
 setTimeout(displayText, 7 * 1000);
 
 
+  // test
+  function stopDefault(e) {
 
+    if (e && e.preventDefault)
+    
+    e.preventDefault();
+    
+    else
+    
+    window.event.returnValue = false;
+    
+    return false;
+    
+    }
+    
+    百度
+    
+    var test = document.getElementById('https://greensock.com/requires-membership/?plugin=DrawSVGPlugin&source=trial');
+    
+    test.onclick = function (e) {
+    
+    alert('我的链接地址是：' + this.href + ', 但是我不会跳转。');
+    
+    stopDefault(e);
+    
+    }
+  
+  
+  
+  // test
 // setTimeout( function(){
 
 //    var element = document.getElementById("p2");
